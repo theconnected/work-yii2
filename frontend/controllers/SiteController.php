@@ -233,6 +233,8 @@ class SiteController extends Controller {
             if ($model->save()) {
                 return $this->render('about');
             }
+        }else{
+        return $this->redirect('index');
         }
     }
 
